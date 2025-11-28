@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="capture1.png" alt="Portfolio Home Screenshot" width="600"/>
+  <img src="capture1.PNG" alt="Portfolio Home Screenshot" width="600"/>
 </p>
 
 # Portfolio Card Website
@@ -48,12 +48,12 @@ Tabs at the top switch between sections using simple JavaScript.
 
 **About Section**  
 <p align="center">
-  <img src="capture.png" alt="About Section" width="500"/>
+  <img src="capture.PNG" alt="About Section" width="500"/>
 </p>
 
 **Projects Section**  
 <p align="center">
-  <img src="capture2.png" alt="Projects Section" width="500"/>
+  <img src="capture2.PNG" alt="Projects Section" width="500"/>
 </p>
 
 ---
