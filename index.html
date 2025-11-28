@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Card</title>
+
+  <!-- External CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page">
+    <div class="card-wrapper">
+
+      <!-- TOP BUTTONS -->
+      <div class="card-buttons">
+        <button class="btn-tab active" onclick="showSection('home')">Home</button>
+        <button class="btn-tab" onclick="showSection('about')">About</button>
+        <button class="btn-tab" onclick="showSection('projects')">Projects</button>
+      </div>
+
+      <!-- CARD -->
+      <div class="card">
+
+        <!-- HOME SECTION -->
+        <div id="home" class="section active">
+          <h1>Jaskeerat Kaur</h1>
+          <p class="subtitle">AI & Machine Learning Engineer</p>
+
+          <div class="contact-info">
+            <span>📍 Patiala, India</span>
+            <span>📧 <a href="mailto:thejaskeerat@gmail.com">thejaskeerat@gmail.com</a></span>
+            <span>📱 +91 9463170174</span>
+            <span>💼 <a href="https://www.linkedin.com/in/jaskeerat-kaur-b2227b320/" target="_blank">LinkedIn</a></span>
+          </div>
+
+          <h2>Summary</h2>
+          <p>AI-focused CSE student skilled in building production-ready RAG systems, LLM-integrated applications, and FastAPI backends...</p>
+
+          <h2>Education</h2>
+          <div class="experience-item">
+            <div class="job-header">
+              <div>
+                <div class="job-title">B.Tech in Computer Science and Engineering</div>
+                <div class="company">Punjabi University Patiala</div>
+              </div>
+              <div class="job-location">2023–2027</div>
+            </div>
+            <p><strong>CGPA: 8.6</strong></p>
+          </div>
+
+          <h2>Key Achievements</h2>
+          <div class="award-item">Best Data Scientist Award at Thapar Summer School</div>
+          <div class="award-item">Deployed multiple AI applications on Streamlit</div>
+          <div class="award-item">Developed RAG pipelines using ChromaDB, Pinecone & Groq</div>
+          <div class="award-item">Built high-accuracy leaf disease detection model</div>
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <div id="about" class="section">
+          <h1>About Me</h1>
+
+          <h2>Experience</h2>
+
+          <div class="experience-item">
+            <div class="job-header">
+              <div>
+                <div class="job-title">AI Intern</div>
+                <div class="company">Smartern X</div>
+              </div>
+              <div class="job-location">Remote | June 2025 - August 2025</div>
+            </div>
+            <ul>
+              <li>Built RAG pipelines using ChromaDB, Pinecone, and Weaviate...</li>
+              <li>Developed FastAPI backends for real-time inference</li>
+              <li>Integrated Groq Whisper STT & Cartesia TTS</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="job-header">
+              <div>
+                <div class="job-title">ML Trainee</div>
+                <div class="company">Thapar Summer School</div>
+              </div>
+              <div class="job-location">Patiala | June 2025 - July 2025</div>
+            </div>
+            <ul>
+              <li>Awarded Best Data Scientist</li>
+              <li>Hands-on ML, DL, OpenCV, GenAI</li>
+              <li>Built neural networks using TensorFlow/Keras</li>
+            </ul>
+          </div>
+
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3>Programming</h3>
+              <div class="skill-list">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Java</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>ML/DL</h3>
+              <div class="skill-list">
+                <span class="skill-tag">Sklearn</span>
+                <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">Matplotlib</span>
+                <span class="skill-tag">LLM Integration</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>Databases</h3>
+              <div class="skill-list">
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">ChromaDB</span>
+                <span class="skill-tag">Weaviate</span>
+                <span class="skill-tag">Pinecone</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>Backend</h3>
+              <div class="skill-list">
+                <span class="skill-tag">FastAPI</span>
+                <span class="skill-tag">REST API</span>
+                <span class="skill-tag">Postman</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECTS SECTION -->
+        <div id="projects" class="section">
+          <h1>Projects</h1>
+
+          <div class="project-item">
+            <h3>RAG Application</h3>
+            <ul>
+              <li>RAG system using ChromaDB + Groq</li>
+              <li>Chunking, embeddings & optimized queries</li>
+            </ul>
+          </div>
+
+          <div class="project-item">
+            <h3>Stock Price Prediction</h3>
+            <ul>
+              <li>Interactive Streamlit dashboard</li>
+              <li>Live data fetching + ML predictions</li>
+            </ul>
+          </div>
+
+          <div class="project-item">
+            <h3>Leaf Disease Detection</h3>
+            <ul>
+              <li>CNN model trained on PlantVillage dataset</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS FILE OR INLINE SCRIPT -->
+  <script>
+    function showSection(sectionId) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.querySelectorAll('.btn-tab').forEach(b => b.classList.remove('active'));
+
+      document.getElementById(sectionId).classList.add('active');
+      event.target.classList.add('active');
+
+      document.querySelector('.card').scrollTop = 0;
+    }
+  </script>
+
+</body>
+</html>
